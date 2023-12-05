@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resources/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/d5c54fc082.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./resources/js/shelly.js"></script>
+    <script defer src="./resources/js/hue.js"></script>
+    <script defer src="./resources/js/script.js"></script>
+    <title>Project 2</title>
+  </head>
+  <body>
+    <div class="container-head">
+      <div class="logo">
+        <i
+          id="ic-hue"
+          onclick="toggle('hue');"
+          class="fa-regular fa-lightbulb fa-beat fa-2xl"
+        ></i>
+        
+        <i
+          id="ic-shelly"
+          onclick="toggle('shelly');"
+          class="fa-solid fa-plug-circle-bolt fa-beat fa-2xl"
+        ></i>
+      </div>
+    </div>
+
+    <section id="device">
+      <div id="shellyContainer" class="container"></div>
+      <div id="hueContainer" class="container"></div>
+    </section>
+
+    <footer>&copy; Nigel Belderbos E-ICT</footer>
+  </body>
+</html>
