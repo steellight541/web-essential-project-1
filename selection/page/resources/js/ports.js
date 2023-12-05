@@ -1,8 +1,8 @@
 async function get_ports() {
-    for (let i = 5000; i < 5050; i++) {
+    for (let i = 5000; i < 5010; i++) {
         try {
             let res = new  XMLHttpRequest();
-            res.open('GET', `http://localhost:${i}`, true);
+            res.open('GET', `http://localhost:${i}/website/resources/data/server.json`, true);
             res.send(
                 res.onreadystatechange = function () {
                     if (res.readyState == 4) {
