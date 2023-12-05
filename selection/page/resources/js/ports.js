@@ -11,7 +11,7 @@ get_ports();
 
 async function get_json(url) {
     try {
-        let res = await fetch(url);
+        let res = await fetch(url, { method: 'GET', mode: 'cors', headers: { 'Content-Type': 'application/json' } });
         let data = await res.json();
         console.log(data);
     } catch (error) {
