@@ -136,6 +136,7 @@ function createShellyCard(plug: Iplugs) {
 	const shellyCard = document.createElement("div");
 	shellyCard.classList.add("card");
 
+	
 	const cardIcon = document.createElement("div");
 	cardIcon.classList.add("card-icon");
 
