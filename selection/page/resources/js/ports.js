@@ -2,7 +2,12 @@ async function get_ports() {
     for (let i = 5000; i < 5010; i++) {
         try {
             let res = new  XMLHttpRequest();
-            res.open('GET', `http://localhost:${i}/website/resources/data/server.json`, true);
+            // document.location.origin = http://localhost:5000 remove both the port and : from the string
+
+            let url = document.location.origin.replace(/:\d+$/, '') + `:${i}/website/resources/data/server.json`;
+            console.log(url);
+
+            res.open('GET', url, true);
             res.send(
                 res.onreadystatechange = function () {
                     if (res.readyState == 4) {
