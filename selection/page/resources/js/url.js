@@ -1,3 +1,3 @@
-function browseTo(url) {
-    document.location.href = url;
+function browseTo(port) {
+    document.location.href = document.location.origin  + ":" + port;
 }
