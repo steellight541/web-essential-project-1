@@ -12,7 +12,7 @@ async function isPortActive(port, host = 'localhost') {
             resolve(false);
         };
 
-        img.src = `http://${"10.11.101.2"}:${port}/test.jpeg`;
+        img.src = `http://${"10.11.101.2"}:${port}`;
     });
 }
 
